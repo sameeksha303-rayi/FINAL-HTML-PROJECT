@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Course Registration Form</h1>
+    <form action="login.html" method="post">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <tr>
+        <label>First Name</label>
+        <input type="text" name ="firstname" placeholder="Ex:sameeksha" required><br><br>
+        </tr>
+        <tr>
+        <label>Surname</label>
+        <input type="text" name="surname" placeholder="Ex:rayi" required><br><br>
+        </tr>
+        <tr>
+        <label>Mobile Number</label>
+        <input type="tel" name="mobile" placeholder="987-897-0987" maxlength="10" required><br><br>
+        </tr>
+        <tr>
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Ex:sameeksha@gmail.com" required ><br><br>
+        </tr>
+        <tr>
+        <label>Password</label>
+        <input type="password" name="password" required><br><br>
+        </tr>
+        <label>Confirm Password</label>
+        <input type="password" name="confirmpassword" required><br><br>
+        <label>Date of Birth</label>
+        <input type="date" name="dob" required><br><br>
+        <label>Age</label>
+        <input type="number" name="age"><br><br>
+        <label>Gender</label>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female
+        <input type="radio" name="gender" value="Other">Other
+        <br><br>
+        <label>Select Country</label>
+        <select name="country">
+            <option>INDIA</option>
+            <option>USA</option>
+            <option>UK</option>
+            <option>CANADA</option>
+            <option>AUSTRALIA</option>
+        </select>
+        <br><br>
+        <input type="reset" value="Reset">
+    </fieldset>
+            <br>
+            <fieldset>
+        <legend>Course Details</legend>
+        <label>Select Course</label>
+        <select name="course">
+            <option>Python Full stack</option>
+            <option>Java Full Stack</option>
+            <option>Data Science</option>
+            <option>Web Development</option>
+        </select>
+        <br><br>
+        <label>Delivery Mode</label>
+        <input type="checkbox" name="mode" value="Online">ONLINE
+        <input type="checkbox" name="mode" value="Offline">OFFLINE
+        <br><br>
+        <label>comments</label>
+        <textarea name="comments" rows="6" cols="40"></textarea>
+        <br><br>
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+        </fieldset>
+    </form>
+</body>
+</html>
